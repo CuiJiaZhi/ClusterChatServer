@@ -1,2 +1,9 @@
 # ClusterChatServer
-- 基于`Muduo`, `Redis Pub/Sub`, `Nginx & MySQL`的集群实现
+- 平台工具：`Visual Studio Code + WSL2`、`CMake`构建、`Linux Shell`自动化编译
+- 项目内容
+    - 基于`Muduo Reactor`模型构建高并发网络核心模块，解耦网络`I/O`处理与业务逻辑代码；
+    - 采用`JSON`作为私有通信协议，实现消息的序列化/反序列化；
+    - 配置`Nginx TCP`负载均衡，实现服务集群化，提升系统整体并发能力；
+    - 利用`Redis`的发布/订阅功能，实现跨服务器的消息通信；
+    - 实现数据库连接池组件，通过复用连接资源，减少频繁建立和断开数据库连接带来的开销；
+    - 使用CMake管理项目构建流程，通过Shell脚本自动化编译，提升开发效率。
