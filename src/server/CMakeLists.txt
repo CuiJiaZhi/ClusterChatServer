@@ -1,8 +1,9 @@
 # 设置需要编译的源文件列表
 aux_source_directory(. SRC_LISTS)
-aux_source_directory(./db MYSQL_LISTS)
+# aux_source_directory(./db MYSQL_LISTS)
 aux_source_directory(./model MODEL_LISTS)
 aux_source_directory(./redis REDIS_LISTS)
+aux_source_directory(./dbConnPool DBCONNPOOL_LISTS)
 
 # 生成可执行文件
 add_executable(server
@@ -10,6 +11,7 @@ add_executable(server
     ${MYSQL_LISTS}
     ${MODEL_LISTS}
     ${REDIS_LISTS}
+    ${DBCONNPOOL_LISTS}
 )
 
 # 链接静态库文件

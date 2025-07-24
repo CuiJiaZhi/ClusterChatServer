@@ -205,7 +205,7 @@ src/client/CMakeFiles/client.dir/main.cpp.o: \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/model/User.hpp \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/model/User.hpp \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/include/public.hpp \
- /home/cuijiazhi/work/SL/Project/ClusterChatServer/thridparty/json.hpp \
+ /home/cuijiazhi/work/SL/Project/ClusterChatServer/thirdparty/json.hpp \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h /usr/include/c++/11/cassert \

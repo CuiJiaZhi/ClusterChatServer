@@ -17,7 +17,7 @@ ChatServer::ChatServer(
     : server_(evLoop, listenAddr, nameArg)
     , evLoop_(evLoop)
 {
-    // 处理用户连接的回调函数
+    // 设置用户连接/断开时触发的回调函数
     server_.setConnectionCallback(
         std::bind(&ChatServer::onConnection, this, _1)
     );
@@ -36,7 +36,7 @@ void ChatServer::start() {
     server_.start();
 }
 
-// 处理用户连接的回调函数
+// 用户连接/断开时触发的回调函数
 void ChatServer::onConnection(const TcpConnectionPtr& conn) {
     if(!conn->connected()) {
         // 客户端断开连接
@@ -51,7 +51,7 @@ void ChatServer::onMessage(
     Buffer* buffer,
     Timestamp time) 
 {
-    // 从缓冲区读取数据
+    // 从inputBuffer_（接收缓冲区）读取数据
     std::string buf = buffer->retrieveAllAsString();
 
     // 数据的反序列化

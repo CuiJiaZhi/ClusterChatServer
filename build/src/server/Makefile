@@ -178,29 +178,53 @@ ChatService.cpp.s:
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/ChatService.cpp.s
 .PHONY : ChatService.cpp.s
 
-db/MySql.o: db/MySql.cpp.o
-.PHONY : db/MySql.o
+dbConnPool/DataBaseConn.o: dbConnPool/DataBaseConn.cpp.o
+.PHONY : dbConnPool/DataBaseConn.o
 
 # target to build an object file
-db/MySql.cpp.o:
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/db/MySql.cpp.o
-.PHONY : db/MySql.cpp.o
+dbConnPool/DataBaseConn.cpp.o:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o
+.PHONY : dbConnPool/DataBaseConn.cpp.o
 
-db/MySql.i: db/MySql.cpp.i
-.PHONY : db/MySql.i
+dbConnPool/DataBaseConn.i: dbConnPool/DataBaseConn.cpp.i
+.PHONY : dbConnPool/DataBaseConn.i
 
 # target to preprocess a source file
-db/MySql.cpp.i:
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/db/MySql.cpp.i
-.PHONY : db/MySql.cpp.i
+dbConnPool/DataBaseConn.cpp.i:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.i
+.PHONY : dbConnPool/DataBaseConn.cpp.i
 
-db/MySql.s: db/MySql.cpp.s
-.PHONY : db/MySql.s
+dbConnPool/DataBaseConn.s: dbConnPool/DataBaseConn.cpp.s
+.PHONY : dbConnPool/DataBaseConn.s
 
 # target to generate assembly for a file
-db/MySql.cpp.s:
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/db/MySql.cpp.s
-.PHONY : db/MySql.cpp.s
+dbConnPool/DataBaseConn.cpp.s:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.s
+.PHONY : dbConnPool/DataBaseConn.cpp.s
+
+dbConnPool/DataBaseConnPool.o: dbConnPool/DataBaseConnPool.cpp.o
+.PHONY : dbConnPool/DataBaseConnPool.o
+
+# target to build an object file
+dbConnPool/DataBaseConnPool.cpp.o:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o
+.PHONY : dbConnPool/DataBaseConnPool.cpp.o
+
+dbConnPool/DataBaseConnPool.i: dbConnPool/DataBaseConnPool.cpp.i
+.PHONY : dbConnPool/DataBaseConnPool.i
+
+# target to preprocess a source file
+dbConnPool/DataBaseConnPool.cpp.i:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.i
+.PHONY : dbConnPool/DataBaseConnPool.cpp.i
+
+dbConnPool/DataBaseConnPool.s: dbConnPool/DataBaseConnPool.cpp.s
+.PHONY : dbConnPool/DataBaseConnPool.s
+
+# target to generate assembly for a file
+dbConnPool/DataBaseConnPool.cpp.s:
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.s
+.PHONY : dbConnPool/DataBaseConnPool.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -361,9 +385,12 @@ help:
 	@echo "... ChatService.o"
 	@echo "... ChatService.i"
 	@echo "... ChatService.s"
-	@echo "... db/MySql.o"
-	@echo "... db/MySql.i"
-	@echo "... db/MySql.s"
+	@echo "... dbConnPool/DataBaseConn.o"
+	@echo "... dbConnPool/DataBaseConn.i"
+	@echo "... dbConnPool/DataBaseConn.s"
+	@echo "... dbConnPool/DataBaseConnPool.o"
+	@echo "... dbConnPool/DataBaseConnPool.i"
+	@echo "... dbConnPool/DataBaseConnPool.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

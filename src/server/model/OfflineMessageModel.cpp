@@ -1,5 +1,6 @@
 #include "OfflineMessageModel.hpp"
-#include "MySql.hpp"
+// #include "MySql.hpp"
+#include "DataBaseConnPool.hpp"
 
 // 存储用户的离线消息
 void OfflineMsgModel::insert(int userid, const std::string& msg) {
@@ -10,9 +11,20 @@ void OfflineMsgModel::insert(int userid, const std::string& msg) {
         userid, msg.c_str()
     );
 
-    MySQL mysql;
-    if(mysql.connect()) {
-        mysql.update(sql);
+    // MySQL mysql;
+    // if(mysql.connect()) {
+    //     mysql.update(sql);
+    // }
+
+    // 获取连接池实例
+    DataBaseConnPool* pool = DataBaseConnPool::instance();
+    if(pool != nullptr) {
+        // 获取连接
+        std::shared_ptr<DataBaseConn> conn = pool->getConnection();
+        if(conn != nullptr) {
+            // 执行插入操作
+            conn->update(sql);
+        }
     }
 }
 
@@ -25,9 +37,20 @@ void OfflineMsgModel::remove(int userid) {
         userid
     );
 
-    MySQL mysql;
-    if(mysql.connect()) {
-        mysql.update(sql);
+    // MySQL mysql;
+    // if(mysql.connect()) {
+    //     mysql.update(sql);
+    // }
+
+    // 获取连接池实例
+    DataBaseConnPool* pool = DataBaseConnPool::instance();
+    if(pool != nullptr) {
+        // 获取连接
+        std::shared_ptr<DataBaseConn> conn = pool->getConnection();
+        if(conn != nullptr) {
+            // 执行删除操作
+            conn->update(sql);
+        }
     }
 }
 
@@ -40,17 +63,36 @@ std::vector<std::string> OfflineMsgModel::query(int userid) {
         userid
     );
 
-    std::vector<std::string> vec;
-    MySQL mysql;
-    if(mysql.connect()) {
-        MYSQL_RES* res = mysql.query(sql);
-        if(res != nullptr) {
-            MYSQL_ROW row;
-            while((row = mysql_fetch_row(res)) != nullptr) {
-                vec.push_back(row[0]);
-            }
+    // std::vector<std::string> vec;
+    // MySQL mysql;
+    // if(mysql.connect()) {
+    //     MYSQL_RES* res = mysql.query(sql);
+    //     if(res != nullptr) {
+    //         MYSQL_ROW row;
+    //         while((row = mysql_fetch_row(res)) != nullptr) {
+    //             vec.push_back(row[0]);
+    //         }
 
-            mysql_free_result(res);
+    //         mysql_free_result(res);
+    //     }
+    // }
+
+    std::vector<std::string> vec;
+    // 获取连接池实例
+    DataBaseConnPool* pool = DataBaseConnPool::instance();
+    if(pool != nullptr) {
+        // 获取连接
+        std::shared_ptr<DataBaseConn> conn = pool->getConnection();
+        if(conn != nullptr) {
+            // 执行查询操作
+            MYSQL_RES* res = conn->query(sql);
+            if(res != nullptr) {
+                MYSQL_ROW row;
+                while((row = mysql_fetch_row(res)) != nullptr) {
+                    vec.push_back(row[0]);
+                }
+                mysql_free_result(res);
+            }
         }
     }
 

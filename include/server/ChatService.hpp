@@ -76,12 +76,11 @@ private:
     // 消息 --> 相应的回调函数
     std::unordered_map<int, MsgHandler> msgHandlerMap_;
 
-    // 存储在线用户的通信连接（需要考虑线程安全）
+    // 存储当前服务器在线用户的通信连接（需要考虑线程安全）
     std::unordered_map<int, TcpConnectionPtr> userConnMap_;
 
-    // 互斥锁
+    // 互斥锁，用于保护userConnMap_
     std::mutex connMtx_;
-
 
     // 数据操作类对象
     UserModel userModel_;

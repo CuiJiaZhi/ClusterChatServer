@@ -290,7 +290,7 @@ src/server/CMakeFiles/server.dir/main.cpp.o: \
  /usr/include/muduo/base/Mutex.h /usr/include/muduo/base/CurrentThread.h \
  /usr/include/muduo/net/TimerId.h \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/ChatService.hpp \
- /home/cuijiazhi/work/SL/Project/ClusterChatServer/thridparty/json.hpp \
+ /home/cuijiazhi/work/SL/Project/ClusterChatServer/thirdparty/json.hpp \
  /usr/include/c++/11/cassert /usr/include/c++/11/ciso646 \
  /usr/include/c++/11/numeric /usr/include/c++/11/bits/stl_numeric.h \
  /usr/include/c++/11/pstl/glue_numeric_defs.h \

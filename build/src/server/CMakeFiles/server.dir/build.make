@@ -111,24 +111,10 @@ src/server/CMakeFiles/server.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/main.cpp.s"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/main.cpp -o CMakeFiles/server.dir/main.cpp.s
 
-src/server/CMakeFiles/server.dir/db/MySql.cpp.o: src/server/CMakeFiles/server.dir/flags.make
-src/server/CMakeFiles/server.dir/db/MySql.cpp.o: ../src/server/db/MySql.cpp
-src/server/CMakeFiles/server.dir/db/MySql.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/server/CMakeFiles/server.dir/db/MySql.cpp.o"
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/db/MySql.cpp.o -MF CMakeFiles/server.dir/db/MySql.cpp.o.d -o CMakeFiles/server.dir/db/MySql.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/db/MySql.cpp
-
-src/server/CMakeFiles/server.dir/db/MySql.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/db/MySql.cpp.i"
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/db/MySql.cpp > CMakeFiles/server.dir/db/MySql.cpp.i
-
-src/server/CMakeFiles/server.dir/db/MySql.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/db/MySql.cpp.s"
-	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/db/MySql.cpp -o CMakeFiles/server.dir/db/MySql.cpp.s
-
 src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o: src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o: ../src/server/model/GroupModel.cpp
 src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o -MF CMakeFiles/server.dir/model/GroupModel.cpp.o.d -o CMakeFiles/server.dir/model/GroupModel.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/model/GroupModel.cpp
 
 src/server/CMakeFiles/server.dir/model/GroupModel.cpp.i: cmake_force
@@ -142,7 +128,7 @@ src/server/CMakeFiles/server.dir/model/GroupModel.cpp.s: cmake_force
 src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o: src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o: ../src/server/model/OfflineMessageModel.cpp
 src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o -MF CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o.d -o CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/model/OfflineMessageModel.cpp
 
 src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.i: cmake_force
@@ -156,7 +142,7 @@ src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.s: cmake_force
 src/server/CMakeFiles/server.dir/model/UserModel.cpp.o: src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/model/UserModel.cpp.o: ../src/server/model/UserModel.cpp
 src/server/CMakeFiles/server.dir/model/UserModel.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/server/CMakeFiles/server.dir/model/UserModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/server/CMakeFiles/server.dir/model/UserModel.cpp.o"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/model/UserModel.cpp.o -MF CMakeFiles/server.dir/model/UserModel.cpp.o.d -o CMakeFiles/server.dir/model/UserModel.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/model/UserModel.cpp
 
 src/server/CMakeFiles/server.dir/model/UserModel.cpp.i: cmake_force
@@ -170,7 +156,7 @@ src/server/CMakeFiles/server.dir/model/UserModel.cpp.s: cmake_force
 src/server/CMakeFiles/server.dir/model/friendModel.cpp.o: src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/model/friendModel.cpp.o: ../src/server/model/friendModel.cpp
 src/server/CMakeFiles/server.dir/model/friendModel.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/server/CMakeFiles/server.dir/model/friendModel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/server/CMakeFiles/server.dir/model/friendModel.cpp.o"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/model/friendModel.cpp.o -MF CMakeFiles/server.dir/model/friendModel.cpp.o.d -o CMakeFiles/server.dir/model/friendModel.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/model/friendModel.cpp
 
 src/server/CMakeFiles/server.dir/model/friendModel.cpp.i: cmake_force
@@ -184,7 +170,7 @@ src/server/CMakeFiles/server.dir/model/friendModel.cpp.s: cmake_force
 src/server/CMakeFiles/server.dir/redis/redis.cpp.o: src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/redis/redis.cpp.o: ../src/server/redis/redis.cpp
 src/server/CMakeFiles/server.dir/redis/redis.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/server/CMakeFiles/server.dir/redis/redis.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/server/CMakeFiles/server.dir/redis/redis.cpp.o"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/redis/redis.cpp.o -MF CMakeFiles/server.dir/redis/redis.cpp.o.d -o CMakeFiles/server.dir/redis/redis.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/redis/redis.cpp
 
 src/server/CMakeFiles/server.dir/redis/redis.cpp.i: cmake_force
@@ -195,17 +181,46 @@ src/server/CMakeFiles/server.dir/redis/redis.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/redis/redis.cpp.s"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/redis/redis.cpp -o CMakeFiles/server.dir/redis/redis.cpp.s
 
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o: src/server/CMakeFiles/server.dir/flags.make
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o: ../src/server/dbConnPool/DataBaseConn.cpp
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o -MF CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o.d -o CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConn.cpp
+
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.i"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConn.cpp > CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.i
+
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.s"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConn.cpp -o CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.s
+
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o: src/server/CMakeFiles/server.dir/flags.make
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o: ../src/server/dbConnPool/DataBaseConnPool.cpp
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o -MF CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o.d -o CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o -c /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConnPool.cpp
+
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.i"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConnPool.cpp > CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.i
+
+src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.s"
+	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/dbConnPool/DataBaseConnPool.cpp -o CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.s
+
 # Object files for target server
 server_OBJECTS = \
 "CMakeFiles/server.dir/ChatServer.cpp.o" \
 "CMakeFiles/server.dir/ChatService.cpp.o" \
 "CMakeFiles/server.dir/main.cpp.o" \
-"CMakeFiles/server.dir/db/MySql.cpp.o" \
 "CMakeFiles/server.dir/model/GroupModel.cpp.o" \
 "CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o" \
 "CMakeFiles/server.dir/model/UserModel.cpp.o" \
 "CMakeFiles/server.dir/model/friendModel.cpp.o" \
-"CMakeFiles/server.dir/redis/redis.cpp.o"
+"CMakeFiles/server.dir/redis/redis.cpp.o" \
+"CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o" \
+"CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
@@ -213,15 +228,16 @@ server_EXTERNAL_OBJECTS =
 ../bin/server: src/server/CMakeFiles/server.dir/ChatServer.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/ChatService.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/main.cpp.o
-../bin/server: src/server/CMakeFiles/server.dir/db/MySql.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/model/GroupModel.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/model/OfflineMessageModel.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/model/UserModel.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/model/friendModel.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/redis/redis.cpp.o
+../bin/server: src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConn.cpp.o
+../bin/server: src/server/CMakeFiles/server.dir/dbConnPool/DataBaseConnPool.cpp.o
 ../bin/server: src/server/CMakeFiles/server.dir/build.make
 ../bin/server: src/server/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../../../bin/server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cuijiazhi/work/SL/Project/ClusterChatServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../../../bin/server"
 	cd /home/cuijiazhi/work/SL/Project/ClusterChatServer/build/src/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

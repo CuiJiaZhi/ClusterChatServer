@@ -15,7 +15,7 @@ void resetHandler(int) {
 
 // ChatServer：网络层
 // ChatService：业务层
-// /model/、/dp/：数据层
+// model/以及dp/：数据层
 int main(int argc, char** argv)
 {
     if(argc < 3) {
@@ -26,14 +26,15 @@ int main(int argc, char** argv)
 
     signal(SIGINT, resetHandler);
 
-    char* ip = argv[1];
-    int port = atoi(argv[2]);
+    char* ip = argv[1];             // IP地址
+    int port = atoi(argv[2]);       // 端口
 
     EventLoop evLoop;
     InetAddress addr(ip, port);
     ChatServer server(&evLoop, addr, "ChatServer");
 
     server.start();
+
     evLoop.loop();
 
     return 0;

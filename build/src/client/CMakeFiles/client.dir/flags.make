@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/client -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/db -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/model -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/redis -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/thridparty
+CXX_INCLUDES = -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/client -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/model -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/redis -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/dbConnPool -I/home/cuijiazhi/work/SL/Project/ClusterChatServer/thirdparty
 
 CXX_FLAGS = 
 

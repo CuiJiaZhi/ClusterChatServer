@@ -2,7 +2,7 @@ src/server/CMakeFiles/server.dir/ChatService.cpp.o: \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/src/server/ChatService.cpp \
  /usr/include/stdc-predef.h \
  /home/cuijiazhi/work/SL/Project/ClusterChatServer/include/server/ChatService.hpp \
- /home/cuijiazhi/work/SL/Project/ClusterChatServer/thridparty/json.hpp \
+ /home/cuijiazhi/work/SL/Project/ClusterChatServer/thirdparty/json.hpp \
  /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

@@ -16,10 +16,11 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/server
     ${PROJECT_SOURCE_DIR}/include/client
-    ${PROJECT_SOURCE_DIR}/include/server/db
+    # ${PROJECT_SOURCE_DIR}/include/server/db
     ${PROJECT_SOURCE_DIR}/include/server/model
     ${PROJECT_SOURCE_DIR}/include/server/redis
-    ${PROJECT_SOURCE_DIR}/thridparty
+    ${PROJECT_SOURCE_DIR}/include/server/dbConnPool
+    ${PROJECT_SOURCE_DIR}/thirdparty
 )
 
 # 搜索子目录

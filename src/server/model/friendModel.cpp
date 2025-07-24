@@ -1,5 +1,6 @@
 #include "friendModel.hpp"
-#include "MySql.hpp"
+// #include "MySql.hpp"
+#include "DataBaseConnPool.hpp"
 
 // 用户添加好友
 void FriendModel::insert(int userid, int friendid) {
@@ -10,9 +11,20 @@ void FriendModel::insert(int userid, int friendid) {
         userid, friendid
     );
 
-    MySQL mysql;
-    if(mysql.connect()) {
-        mysql.update(sql);
+    // MySQL mysql;
+    // if(mysql.connect()) {
+    //     mysql.update(sql);
+    // }
+
+    // 获取连接池实例
+    DataBaseConnPool* pool = DataBaseConnPool::instance();
+    if(pool != nullptr) {
+        // 获取连接
+        std::shared_ptr<DataBaseConn> conn = pool->getConnection();
+        if(conn != nullptr) {
+            // 执行插入操作
+            conn->update(sql);
+        }
     }
 }
 
@@ -29,21 +41,45 @@ std::vector<User> FriendModel::query(int userid) {
 
     std::vector<User> users;
 
-    MySQL mysql;
-    if(mysql.connect()) {
-        MYSQL_RES* res = mysql.query(sql);
-        if(res != nullptr) {
-            MYSQL_ROW row;
-            while((row = mysql_fetch_row(res)) != nullptr) {
-                users.emplace_back(
-                    atoi(row[0]),       // id
-                    row[1],             // name
-                    "",                 // pwd
-                    row[2]              // state
-                );
-            }
+    // MySQL mysql;
+    // if(mysql.connect()) {
+    //     MYSQL_RES* res = mysql.query(sql);
+    //     if(res != nullptr) {
+    //         MYSQL_ROW row;
+    //         while((row = mysql_fetch_row(res)) != nullptr) {
+    //             users.emplace_back(
+    //                 atoi(row[0]),       // id
+    //                 row[1],             // name
+    //                 "",                 // pwd
+    //                 row[2]              // state
+    //             );
+    //         }
 
-            mysql_free_result(res);
+    //         mysql_free_result(res);
+    //     }
+    // }
+
+    // 获取连接池实例
+    DataBaseConnPool* pool = DataBaseConnPool::instance();
+    if(pool != nullptr) {
+        // 获取连接
+        std::shared_ptr<DataBaseConn> conn = pool->getConnection();
+        if(conn != nullptr) {
+            // 执行查询操作
+            MYSQL_RES* res = conn->query(sql);
+            if(res != nullptr) {
+                MYSQL_ROW row;
+                while((row = mysql_fetch_row(res)) != nullptr) {
+                    users.emplace_back(
+                        atoi(row[0]),       // id
+                        row[1],             // name
+                        "",                 // pwd
+                        row[2]              // state
+                    );
+                }
+
+                mysql_free_result(res);
+            }
         }
     }
 
