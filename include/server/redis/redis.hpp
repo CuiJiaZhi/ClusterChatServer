@@ -35,10 +35,10 @@ public:
     void init_notify_handler(std::function<void(int, const std::string&)> fn);
 
 private:
-    // hiredis同步上下文对象（redis-cli, 客户端），负责publish消息
+    // hiredis同步上下文对象（redis-cli，客户端），负责publish消息
     redisContext* publish_context_;
 
-    // hiredis同步上下文对象（redis-cli, 客户端），负责subscribe消息
+    // hiredis同步上下文对象（redis-cli，客户端），负责subscribe消息
     redisContext* subscribe_context_;
 
     // 回调函数，收到订阅的消息，上报至ChatService层

@@ -6,6 +6,7 @@ project(CLUSTERCHATSERVER LANGUAGES CXX)
 
 # # 配置编译器选项
 # set(CMAKE_CXX_FLAGS ${CMAKE_FXX_FLAGS} -g)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3")
 
 # 设置可执行文件的生成路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -20,6 +21,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include/server/model
     ${PROJECT_SOURCE_DIR}/include/server/redis
     ${PROJECT_SOURCE_DIR}/include/server/dbConnPool
+    # ${PROJECT_SOURCE_DIR}/include/tools
     ${PROJECT_SOURCE_DIR}/thirdparty
 )
 
