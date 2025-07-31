@@ -21,7 +21,7 @@ include_directories(
     ${PROJECT_SOURCE_DIR}/include/server/model
     ${PROJECT_SOURCE_DIR}/include/server/redis
     ${PROJECT_SOURCE_DIR}/include/server/dbConnPool
-    # ${PROJECT_SOURCE_DIR}/include/tools
+    ${PROJECT_SOURCE_DIR}/include/tools
     ${PROJECT_SOURCE_DIR}/thirdparty
 )
 
