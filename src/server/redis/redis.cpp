@@ -1,6 +1,4 @@
 #include "redis.hpp"
-#include "Logger.hpp"
-
 #include <iostream>
 
 // 构造函数
@@ -25,7 +23,7 @@ bool Redis::connect() {
     // 负责publish发布消息的上下文连接
     publish_context_ = redisConnect("127.0.0.1", 6379);
     if(publish_context_ == nullptr) {
-        LOG_ERROR() << "[publish] connect redis failed!";
+        std::cerr << "[publish] connect redis failed!\n";
 
         return false;
     }
@@ -33,7 +31,7 @@ bool Redis::connect() {
     // 负责subscribe订阅消息的上下文连接
     subscribe_context_ = redisConnect("127.0.0.1", 6379);
     if(subscribe_context_ == nullptr) {
-        LOG_ERROR() << "[publish] connect redis failed!";
+        std::cerr << "[subscribe] connect redis failed!\n";
 
         return false;
     }
@@ -47,7 +45,7 @@ bool Redis::connect() {
 
     t.detach();
 
-    LOG_INFO() << "connect redis-server success";
+    std::cout << "connect redis-server success!\n";
 
     return true;
 }
@@ -65,7 +63,7 @@ bool Redis::publish(int channel, const std::string& message) {
     );
 
     if(reply == nullptr) {
-        LOG_ERROR() << "publish command failed!";
+        std::cerr << "publish command failed!\n";
 
         return false;
     }
@@ -92,7 +90,7 @@ bool Redis::subscribe(int channel) {
     // redisAppendCommand：非阻塞​​函数，仅将命令写入客户端的输出缓冲区后立即返回，​​不等待响应
     //// [ redisAppendCommand：命令 ----> 客户端的输出缓冲区 ]
     if(redisAppendCommand(subscribe_context_, "SUBSCRIBE %d", channel) == REDIS_ERR) {
-        LOG_ERROR() << "subscribe command failed!";
+        std::cerr << "subscribe command failed!\n";
 
         return false;
     }
@@ -103,7 +101,7 @@ bool Redis::subscribe(int channel) {
     int done = 0;
     while(!done) {
         if(redisBufferWrite(subscribe_context_, &done) == REDIS_ERR) {
-            LOG_ERROR() << "subscribe command failed!";
+            std::cerr << "subscribe command failed!\n";
 
             return false;
         }
@@ -115,7 +113,7 @@ bool Redis::subscribe(int channel) {
 // 向redis指定的通道unsubscribe取消订阅消息
 bool Redis::unsubscribe(int channel) {
     if(redisAppendCommand(subscribe_context_, "UNSUBSCRIBE %d", channel) == REDIS_ERR) {
-        LOG_ERROR() << "unsubscribe command failed!";
+        std::cerr << "unsubscribe command failed!\n";
 
         return false;
     }
@@ -123,7 +121,7 @@ bool Redis::unsubscribe(int channel) {
     int done = 0;
     while(!done) {
         if(redisBufferWrite(subscribe_context_, &done) == REDIS_ERR) {
-            LOG_ERROR() << "unsubscribe command failed!";
+            std::cerr << "unsubscribe command failed!\n";
 
             return false;
         }
@@ -163,7 +161,7 @@ void Redis::observer_channel_message() {
         freeReplyObject(reply);
     }
 
-    LOG_ERROR() << "observer_channel_message quit";
+    std::cerr << "observer_channel_message quit\n";
 }
 
 // 初始化向业务层上报通道消息的回调函数
